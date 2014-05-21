@@ -77,59 +77,45 @@
         <h4 itemprop="name">Link2U Coworking</h4>
         <p class="content inner" itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress"> <span style="font-size:15px"><strong><span itemprop="streetAddress">Avenida Paulista, 2202 - 3 º floor / 31 </span></strong></span><span style="font-size:15px"><strong> - <span itemprop="addressLocality">Sao Paulo,</span> <span itemprop="addressRegion">SP</span></strong></span> <br /> <br /> <span style="font-size:15px"><strong>(24/7 SPACE ACCESS FOR coworkers)</strong></span> <br /> <br /> <strong>CONTACT US NOW!</strong> <br /> <span itemprop="telephone">+55 (11) 3253-7000</span> <br /> <a href="http://www.link2u.com.br/" itemprop="url">http://www.link2u.com.br</a> </p>
         <p class="content inner azul"> <br /> Through this communication channel you can ask questions, request information, send suggestions or schedule a visit to our <strong>coworking.</strong> </p>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
-        <div id="messages">
-          <form id="contactForm" method="post" action="/mail.php"></form>
-        </div>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
-        <div class="formRow">
-          <form id="contactForm" method="post" action="/mail.php"> <label for="nome">*First Name</label> </form>
-          <input type="text" name="nome" id="nome" value="" />
-          <form id="contactForm" method="post" action="/mail.php"> </form>
-        </div>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
-        <div class="formRow">
-          <form id="contactForm" method="post" action="/mail.php"> <label for="email">* E-mail:</label> </form>
-          <input type="text" name="email" id="email" value="" />
-          <form id="contactForm" method="post" action="/mail.php"> </form>
-        </div>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
-        <div class="formRow">
-          <form id="contactForm" method="post" action="/mail.php"> <label for="fone">* Phone:</label> </form>
-          <input type="text" name="ddd" id="ddd" style="width:50px" maxlength="2" />
-          <form id="contactForm" method="post" action="/mail.php"> </form>
-          <input type="text" name="fone" id="fone" style="width:100px" maxlength="9" />
-          <form id="contactForm" method="post" action="/mail.php"> </form>
-        </div>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
-        <div class="formRow">
-          <form id="contactForm" method="post" action="/mail.php"> <label for="empresa">Company:</label> </form>
-          <input type="text" name="empresa" id="empresa" value="" />
-          <form id="contactForm" method="post" action="/mail.php"> </form>
-        </div>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
-        <div class="formRow">
-          <form id="contactForm" method="post" action="/mail.php"> <label for="mensagem">Message:</label> </form>
-          <textarea name="mensagem" id="mensagem" cols="10" rows="8"></textarea>
-          <form id="contactForm" method="post" action="/mail.php"> </form>
-        </div>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
-        <div class="formRow">
-          <form id="contactForm" method="post" action="/mail.php"> <label> </label> <em>* Required fields.</em> </form>
-        </div>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
-        <div class="formRow">
-          <form id="contactForm" method="post" action="/mail.php"> <label> </label> </form>
-          <input type="submit" value="Send" id="btnEnviarContato" class="send-form" />
-          <form id="contactForm" method="post" action="/mail.php"> </form>
-        </div>
-        <form id="contactForm" method="post" action="/mail.php"> </form>
+        <form method="post" action="/mail.php" id="contactForm">
+          <div id="messages"></div>
+          <div class="formRow">
+            <label for="nome">* Name:</label>
+            <input type="text" name="nome" id="nome" value="" />
+          </div>
+          <div class="formRow">
+            <label for="email">* E-mail:</label>
+            <input type="text" name="email" id="email" value="" />
+
+          </div>
+          <div class="formRow">
+            <label for="fone">* Phone:</label>
+            <input type="text" name="ddd" id="ddd" style="width: 50px;" maxlength="2" />
+            <input type="text" name="fone" id="fone" style="width: 100px;" maxlength="9" />
+          </div>
+          <div class="formRow">
+            <label for="empresa">Company:</label>
+            <input type="text" name="empresa" id="empresa" value="" />
+          </div>
+          <div class="formRow">
+            <label for="mensagem">Message:</label>
+            <textarea name="mensagem" id="mensagem" cols="10" rows="8"></textarea>
+          </div>
+          <div class="formRow">
+            <label>&nbsp;</label>
+            <em>* Required fields.</em>
+          </div>
+          <div class="formRow">
+            <label>&nbsp;</label>
+            <input type="submit" value="Enviar" id="btnEnviarContato" class="send-form" />
+          </div>
+        </form>
       </div>
-      <div class="clear"></div>
+      <div class="clear">&nbsp;</div>
     </div>
-    <div class="clear"></div>
+    <div class="clear">&nbsp;</div>
   </div>
-  <div>
+  <div style="display: none;">
     <div id="inline_content">
       <h3 class="inner">Thank you</h3>
       Your message has been sent successfully. <br /> We will soon contact you!
